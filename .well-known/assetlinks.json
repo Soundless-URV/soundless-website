@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "cat.urv.cloudlab.soundless",
+    "sha256_cert_fingerprints":
+    ["EE:F7:41:D1:5E:D4:7A:C4:31:CB:26:42:E5:9C:02:CA:6F:E3:23:10:57:71:57:46:12:FC:59:F7:5C:35:AA:3E"]
+  }
+}]
