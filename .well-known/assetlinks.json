@@ -4,6 +4,9 @@
     "namespace": "android_app",
     "package_name": "cat.urv.cloudlab.soundless",
     "sha256_cert_fingerprints":
-    ["B1:10:29:62:FE:B8:04:B8:02:64:86:B9:D0:26:A4:88:B5:15:22:B0:67:D0:35:5A:36:EB:06:D2:4A:FC:F7:C7"]
+    [
+      "B1:10:29:62:FE:B8:04:B8:02:64:86:B9:D0:26:A4:88:B5:15:22:B0:67:D0:35:5A:36:EB:06:D2:4A:FC:F7:C7", 
+      "E1:1C:C7:8E:9A:CA:C5:96:D5:2E:8F:1C:7B:96:D6:50:F0:0E:02:71:35:BC:AF:C1:B2:3E:4A:DF:C7:A8:BC:B9"
+    ]
   }
 }]
