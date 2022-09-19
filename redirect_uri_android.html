@@ -1,12 +1,20 @@
 <!DOCTYPE HTML>
  
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="1; url=http://example.com">
- 
+
 <script>
-  window.location.href = "http://example.com"
+  const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  });
+  const code = params.code;
+  const elem = document.getElementById('code');
+  elem.innerHTML = code;
 </script>
  
-<title>Page Redirection</title>
+<title>Soundless - Fitbit</title>
 
-<a href='http://example.com'>Tornar a l'aplicació</a>
+<h2>Fitbit connectat amb èxit! El teu codi és:</h2>
+<h4>Fitbit conectado con éxito! Tu código es:</h4>
+<h4>Fitbit connected successfully! Your code is:</h4>
+
+<h1 id="code"></h1>
