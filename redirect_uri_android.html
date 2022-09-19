@@ -1,6 +1,14 @@
 <!DOCTYPE HTML>
  
 <meta charset="UTF-8">
+ 
+<title>Soundless - Fitbit</title>
+
+<h2>Fitbit connectat amb èxit! El teu codi és:</h2>
+<h4>Fitbit conectado con éxito! Tu código es:</h4>
+<h4>Fitbit connected successfully! Your code is:</h4>
+
+<h1 id="code"></h1>
 
 <script>
   const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -10,11 +18,3 @@
   const elem = document.getElementById('code');
   elem.innerHTML = code;
 </script>
- 
-<title>Soundless - Fitbit</title>
-
-<h2>Fitbit connectat amb èxit! El teu codi és:</h2>
-<h4>Fitbit conectado con éxito! Tu código es:</h4>
-<h4>Fitbit connected successfully! Your code is:</h4>
-
-<h1 id="code"></h1>
