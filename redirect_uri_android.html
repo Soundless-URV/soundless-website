@@ -27,8 +27,8 @@
 
 <div class="clipboard">
 
-  	<input type="text" value="Hello World" id="myInput">
-	<button id="close-image" onclick="myFunction()"><img src="images/copy_icon.png"></button>
+  	<h1 id="code"></h1>
+	<button id="copy-image" onclick="myFunction()"><img src="images/copy_icon.png"></button>
 
 </div>
 
@@ -42,7 +42,7 @@
   
   function myFunction() {
   // Get the text field
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("code");
 
   // Select the text field
   copyText.select();
@@ -79,7 +79,10 @@
 
 .text {
   margin-top: 100px
+}
 
+.copy-image{
+	width: 20px;
+    height: 20px;
 }
 </style>
-
