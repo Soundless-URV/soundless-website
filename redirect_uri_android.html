@@ -26,7 +26,7 @@
 <div class="clipboard">
 
   	<h1 id="code"></h1>
-	<button id="copy-image" onclick="copyElementText("code")">Copy</button>
+	<button id="copy-image" onclick="copyElementText('code')">Copy</button>
 
 </div>
 
@@ -39,13 +39,9 @@
   elem.innerHTML = code;
   
  function copyElementText(id) {
-    var text = document.getElementById(id).innerText;
-    var elem = document.createElement("textarea");
-    document.body.appendChild(elem);
-    elem.value = text;
-    elem.select();
-    document.execCommand("copy");
-    document.body.removeChild(elem);
+  	let element = document.getElementById(elementID); //select the element
+ 	let elementText = element.textContent; //get the text content from the element
+	navigator.clipboard.writeText(text);
 }
 </script>
 
