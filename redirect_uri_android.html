@@ -2,6 +2,9 @@
  
 <meta charset="UTF-8">
 
+<header>
+</header>
+
 <div class="row">
   <div class="column">
     <img src="images/logo_soundless_transparent.png" alt="Soundless" style="width:100%">
@@ -26,7 +29,7 @@
 <div class="clipboard">
 
   	<h3 id="code"></h3>
-	<button id="copy-image" onclick="copyElementText('code')"><img src="images/copy_icon.png" alt="copy" height="16px" width="16px"></button>
+	<button id="copy-image" onclick="copyElementText('code')"><img src="images/copy_icon.png" alt="copy..."></button>
 
 </div>
 
@@ -48,15 +51,26 @@
 <style>
 * {
   box-sizing: border-box;
-  max-width: 500px;
-  margin: auto;
+  margin:auto;
+  padding:0;
+  border: 0;
+  align-items: center;
+  background: #EFBC83;
+}
+
+header {
+  background: white;
+  height: 70px;
+  width: auto;
 }
 
 .column {
   float: left;
   width: 33.33%;
-  padding: 5px;  
+  padding: 50px;  
   margin-top: 50px;
+  text-align:center;
+
 }
 
 /* Clearfix (clear floats) */
@@ -64,10 +78,17 @@
   content: "";
   clear: both;
   display: table;
+
 }
 
 .text {
-  margin-top: 100px
+  margin-top: 100px;
+  text-align:center;
+  border-radius: 25px;
+  border: 2px solid #A6753F;
+  padding: 20px;
+  width: 500px;
+  height: 110px;
 }
 
 .copy-image{
@@ -88,13 +109,5 @@
 #code{
 	margin-right: 5px;
 }
-	
-.button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
+
 </style>
