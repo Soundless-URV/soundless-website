@@ -2,15 +2,21 @@
  
 <meta charset="UTF-8">
 
-
-<div class="images">
-<img src="images/logo_soundless_transparent.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+<div class="row">
+  <div class="column">
+    <img src="images/logo_soundless_transparent.png" alt="Soundless" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/loading.gif" alt="Loading..." style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/logo_fitbit_transparent.png" alt="Fitbit" style="width:100%">
+  </div>
+</div
 
 <div>
 
 <div class="text">
-
-<title>Soundless - Fitbit</title>
 
 <h2>Fitbit connectat amb èxit! El teu codi és:</h2>
 <h4>Fitbit conectado con éxito! Tu código es:</h4>
@@ -31,9 +37,24 @@
 </script>
 
 <style>
-.text {
+* {
+
+  box-sizing: border-box;
   max-width: 500px;
   margin: auto;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 </style>
 
