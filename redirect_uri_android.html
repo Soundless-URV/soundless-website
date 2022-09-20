@@ -1,7 +1,15 @@
 <!DOCTYPE HTML>
  
 <meta charset="UTF-8">
- 
+
+
+<div class="images">
+<img src="images/logo_soundless_transparent.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+<div>
+
+<div class="text">
+
 <title>Soundless - Fitbit</title>
 
 <h2>Fitbit connectat amb èxit! El teu codi és:</h2>
@@ -9,6 +17,9 @@
 <h4>Fitbit connected successfully! Your code is:</h4>
 
 <h1 id="code"></h1>
+
+
+<div>
 
 <script>
   const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -18,3 +29,11 @@
   const elem = document.getElementById('code');
   elem.innerHTML = code;
 </script>
+
+<style>
+.text {
+  max-width: 500px;
+  margin: auto;
+}
+</style>
+
