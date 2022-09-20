@@ -25,8 +25,8 @@
 
 <div class="clipboard">
 
-  	<h1 id="code"></h1>
-	<button id="copy-image" onclick="copyElementText('code')">Copy</button>
+  	<h3 id="code"></h3>
+	<button id="copy-image" onclick="copyElementText('code')"><img src="images/copy_icon.png" alt="copy..."></button>
 
 </div>
 
@@ -73,5 +73,19 @@
 .copy-image{
 	width: 20px;
     height: 20px;
+}
+
+.clipboard {
+	margin-top: 100px;
+    display: flex;
+  	align-items: center;
+}
+
+#copy-image{
+	margin-left: 5px;
+}
+
+#code{
+	margin-right: 5px;
 }
 </style>
