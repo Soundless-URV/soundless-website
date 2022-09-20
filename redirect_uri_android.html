@@ -26,7 +26,7 @@
 <div class="clipboard">
 
   	<h1 id="code"></h1>
-	<button id="copy-image" onclick="myFunction()"><img src="images/copy_icon.png"></button>
+	<button id="copy-image" onclick="copyText()"><img src="images/copy_icon.png"></button>
 
 </div>
 
@@ -38,19 +38,13 @@
   const elem = document.getElementById('code');
   elem.innerHTML = code;
   
-  function myFunction() {
-  // Get the text field
-  var copyText = document.getElementById('code');
-
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
+  function copyText() {
+  
   // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
+  navigator.clipboard.writeText(code);
   
   // Alert the copied text
-  alert("Copied the text: " + copyText.value);
+  alert("Copied the text: " + code);
 }
 </script>
 
