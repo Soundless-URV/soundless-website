@@ -36,12 +36,12 @@
   });
   const code = params.code;
   const elem = document.getElementById('code');
-  elem.innerHTML = code;
+  elem.innerHTML = code; 
   
- function copyElementText(id) {
+ function copyElementText(elementID) {
   	let element = document.getElementById(elementID); //select the element
  	let elementText = element.textContent; //get the text content from the element
-	navigator.clipboard.writeText(text);
+	navigator.clipboard.writeText(elementText );
 }
 </script>
 
