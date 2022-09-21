@@ -6,13 +6,13 @@
 </header>
 
 <div class="row">
-  <div class="column">
+  <div class="columnleft">
     <img src="images/logo_soundless_transparent.png" alt="Soundless" height="50%" width="50%">
   </div>
-  <div class="column">
+  <div class="columncenter">
     <img src="images/loading.gif" alt="Loading..." height="50%" width="50%">
   </div>
-  <div class="column">
+  <div class="columnright">
     <img src="images/logo_fitbit_transparent.png" alt="Fitbit" height="50%" width="50%">
   </div>
 </div>
@@ -65,12 +65,25 @@ header {
   width: auto;
 }
 
-.column {
+.columnleft {
   float: left;
   width: 33.33%;
-  padding: 50px;  
+  margin-top: 50px;
+  text-align:right;
+
+}
+.columncenter {
+  float: left;
+  width: 33.33%;
   margin-top: 50px;
   text-align:center;
+
+}
+.columnright {
+  float: left;
+  width: 33.33%;
+  margin-top: 50px;
+  text-align:left;
 
 }
 
@@ -79,8 +92,6 @@ header {
   content: "";
   clear: both;
   display: table;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .text {
