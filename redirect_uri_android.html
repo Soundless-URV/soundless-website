@@ -6,18 +6,22 @@
 </header>
 
 <div class="row">
+	
   <div class="space">
-  
   </div>
+	
   <div class="columnleft">
     <img src="images/logo_soundless_transparent.png" alt="Soundless" height="90%" width="90%">
   </div>
+	
   <div class="columncenter">
     <img src="images/loading (2).gif" alt="Loading..." height="100%" width="100%">
   </div>
+	
   <div class="columnright">
     <img src="images/logo_fitbit_transparent.png" alt="Fitbit" height="100%" width="100%">
   </div>
+	
 </div>
 
 
@@ -38,6 +42,7 @@
 
 
 <script>
+	
   const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   });
@@ -50,6 +55,7 @@
  	let elementText = element.textContent; //get the text content from the element
 	navigator.clipboard.writeText(elementText );
 }
+	
 </script>
 
 <style>
