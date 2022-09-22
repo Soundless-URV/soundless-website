@@ -58,7 +58,7 @@
   	let element = document.getElementById(elementID); //select the element
  	let elementText = element.textContent; //get the text content from the element
 	navigator.clipboard.writeText(elementText);
-    	showElem();
+    showElem();
  }
 
  function hideElem() {
@@ -66,7 +66,7 @@
  }
 
  function showElem() {
-  document.getElementById("copy").style.display = "block";
+  document.getElementById("copy").style.display = "flex";
   
   setTimeout(hideElem, 3000)
  }
@@ -157,7 +157,7 @@ header {
 
 #copy {
 	margin-top: 10px;
-    	display: flex;
+    display: flex;
   	align-items: center;
 }
 
