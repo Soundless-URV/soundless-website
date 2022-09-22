@@ -40,6 +40,9 @@
 
 </div>
 
+<div id="copy">
+	<p>✓ Copied! </p> 
+</div>
 
 <script>
 	
@@ -49,12 +52,24 @@
   const code = params.code;
   const elem = document.getElementById('code');
   elem.innerHTML = code; 
+  hideElem();
   
  function copyElementText(elementID) {
   	let element = document.getElementById(elementID); //select the element
  	let elementText = element.textContent; //get the text content from the element
-	navigator.clipboard.writeText(elementText );
-}
+	navigator.clipboard.writeText(elementText);
+    hideElem();
+ }
+
+ function hideElem() {
+  document.getElementById("copy").style.display = "none";
+ }
+
+ function showElem() {
+  document.getElementById("copy").style.display = "block";
+  
+  setTimeout(hideElem, 3000)
+ }
 	
 </script>
 
@@ -140,4 +155,11 @@ header {
 	margin-right: 5px;
 }
 
+#copy {
+	margin-top: 10px;
+    display: flex;
+  	align-items: center;
+}
+
 </style>
+
