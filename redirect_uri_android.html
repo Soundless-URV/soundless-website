@@ -1,27 +1,28 @@
 <!DOCTYPE HTML>
- 
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.55">
 
 <header>
 </header>
 
 <div class="row">
-	
+
   <div class="space">
   </div>
-	
+
   <div class="columnleft">
     <img src="images/logo_soundless_transparent.png" alt="Soundless" height="90%" width="90%">
   </div>
-	
+
   <div class="columncenter">
     <img src="images/loading (2).gif" alt="Loading..." height="100%" width="100%">
   </div>
-	
+
   <div class="columnright">
     <img src="images/logo_fitbit_transparent.png" alt="Fitbit" height="100%" width="100%">
   </div>
-	
+
 </div>
 
 
@@ -34,26 +35,24 @@
 </div>
 
 <div class="clipboard">
-
-  	<h1 id="code" onclick="copyElementText('code')"></h1>
+  	<h2 id="code" onclick="copyElementText('code')"></h2>
 	<button id="copy-image" onclick="copyElementText('code')"><img src="images/copy_icon.png" alt="copy" height="24px" width="24px"></button>
-
 </div>
 
 <div id="copy">
-	<p>✓ Copied! </p> 
+	<p>✓ Copied! </p>
 </div>
 
 <script>
-	
+
   const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   });
   const code = params.code;
   const elem = document.getElementById('code');
-  elem.innerHTML = code; 
+  elem.innerHTML = code;
   hideElem();
-  
+
  function copyElementText(elementID) {
   	let element = document.getElementById(elementID); //select the element
  	let elementText = element.textContent; //get the text content from the element
@@ -67,10 +66,10 @@
 
  function showElem() {
   document.getElementById("copy").style.display = "flex";
-  
+
   setTimeout(hideElem, 3000)
  }
-	
+
 </script>
 
 <style>
@@ -92,31 +91,30 @@ header {
 
 .space {
   float: left;
-  width: 35%;
+  width: 31%;
   margin-top: 50px;
   text-align:right;
-
 }
 
 .columnleft {
   float: left;
-  width: 10%;
+  width: 13%;
   margin-top: 70px;
   text-align:right;
-
 }
+
 .columncenter {
   float: left;
-  width: 10%;
+  width: 13%;
   margin-top: 55px;
   text-align:center;
 }
+
 .columnright {
   float: left;
-  width: 10%;
+  width: 13%;
   margin-top: 70px;
   text-align:left;
-
 }
 
 /* Clearfix (clear floats) */
@@ -170,4 +168,3 @@ header {
 }
 
 </style>
-
