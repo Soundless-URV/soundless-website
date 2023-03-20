@@ -59,6 +59,23 @@ p {
   margin-bottom: 5px;
 }
 
+.two-column-bullet {
+  columns: 2;
+  list-style-type: none;
+  padding: 0;
+}
+
+.two-column-bullet li {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.divider {
+  border: none;
+  border-top: 3px solid #524b4a;
+  margin: 40px 0;
+}
+
 .button {
   display: inline-block;
   margin-right: 14px;
