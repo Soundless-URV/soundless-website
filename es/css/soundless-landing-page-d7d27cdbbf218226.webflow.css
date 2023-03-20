@@ -70,10 +70,12 @@ p {
   width: 100%;
   margin-bottom: 10px;
 }
+
 .divider {
   border: none;
   border-top: 3px solid #524b4a;
-  margin: 40px 0;
+  margin: 40px auto;
+  width: 50%;
 }
 
 .button {
