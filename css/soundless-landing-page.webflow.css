@@ -651,6 +651,18 @@ p {
   max-width: 400px;
 }
 
+.two-column-bullet {
+  columns: 2;
+  list-style-type: none;
+  padding: 0;
+}
+
+.two-column-bullet li {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
 .bold-text-3 {
   font-family: Quicksand, sans-serif;
 }
