@@ -662,6 +662,11 @@ p {
   width: 100%;
   margin-bottom: 10px;
 }
+.divider {
+  border: none;
+  border-top: 3px solid #524b4a;
+  margin: 40px 0;
+}
 
 .bold-text-3 {
   font-family: Quicksand, sans-serif;
