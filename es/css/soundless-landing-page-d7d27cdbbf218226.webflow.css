@@ -65,10 +65,6 @@ p {
   padding: 0;
 }
 
-.bottom-space {
-  padding-bottom: 10px; 
-}
-
 .two-column-bullet li {
   display: inline-block;
   width: 100%;
